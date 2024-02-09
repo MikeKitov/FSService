@@ -13,4 +13,11 @@ app.get("/contact", function(request, response){
      
     response.send("<h1>Контакты</h1>");
 });
+app.get("/api/getPathInfo", function(request, response){
+     
+    request
+    response.json("");
+});
 app.listen(3000);
+//curl
+//routs -g
