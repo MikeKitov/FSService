@@ -4,7 +4,7 @@ Receiveds = {
   Received0: {
     path: "",
     data: {
-      path: "C:/Users/Кирилл/Desktop/Стажировка/FileSystem/home",
+      path: "C:/Users/Кирилл/Desktop/Стажировка/FSService/derectoris/home",
       name: "home",
       isFolder: true,
       size: 0,
@@ -14,9 +14,9 @@ Receiveds = {
     },
   },
   Received1: {
-    path: "./products/category/123",
+    path: "./derectoris/products/category/123",
     data: {
-      path: "C:/Users/Кирилл/Desktop/Стажировка/FileSystem/products/category/123",
+      path: "C:/Users/Кирилл/Desktop/Стажировка/FSService/derectoris/products/category/123",
       name: "123",
       isFolder: true,
       size: 0,
@@ -26,17 +26,17 @@ Receiveds = {
     },
   },
   Received2: {
-    path: "./products/category/category1",
+    path: "./derectoris/products/category/category1",
     data: "{Error: доступ запрешен}",
   },
   Received3: {
-    path: "./products/category/category2",
+    path: "./derectoris/products/category/category2",
     data: null,
   },
   Received4: {
-    path: "./home",
+    path: "./derectoris/home",
     data: {
-      path: "C:/Users/Кирилл/Desktop/Стажировка/FileSystem/home",
+      path: "C:/Users/Кирилл/Desktop/Стажировка/FSService/derectoris/home",
       name: "home",
       isFolder: true,
       size: 0,
@@ -46,9 +46,9 @@ Receiveds = {
     },
   },
   Received5: {
-    path: "./products",
+    path: "./derectoris/products",
     data: {
-      path: "C:/Users/Кирилл/Desktop/Стажировка/FileSystem/products",
+      path: "C:/Users/Кирилл/Desktop/Стажировка/FSService/derectoris/products",
       name: "products",
       isFolder: true,
       size: 0,
@@ -58,9 +58,9 @@ Receiveds = {
     },
   },
   Received6: {
-    path: "./products/category",
+    path: "./derectoris/products/category",
     data: {
-      path: "C:/Users/Кирилл/Desktop/Стажировка/FileSystem/products/category",
+      path: "C:/Users/Кирилл/Desktop/Стажировка/FSService/derectoris/products/category",
       name: "category",
       isFolder: true,
       size: 0,
@@ -70,9 +70,9 @@ Receiveds = {
     },
   },
   Received7: {
-    path: "./about/about.txt",
+    path: "./derectoris/about/about.txt",
     data: {
-      path: "C:/Users/Кирилл/Desktop/Стажировка/FileSystem/about/about.txt",
+      path: "C:/Users/Кирилл/Desktop/Стажировка/FSService/derectoris/about/about.txt",
       name:"about.txt",
       isFolder:false,
       size:11,
@@ -82,9 +82,9 @@ Receiveds = {
     }
   },
   Received8: {
-    path: "./contact/contact.txt",
+    path: "./derectoris/contact/contact.txt",
     data: {
-      path: "C:/Users/Кирилл/Desktop/Стажировка/FileSystem/contact/contact.txt",
+      path: "C:/Users/Кирилл/Desktop/Стажировка/FSService/derectoris/contact/contact.txt",
       name:"contact.txt",
       isFolder:false,
       size:84,
@@ -94,11 +94,11 @@ Receiveds = {
     }
   },
   Received9: {
-    path: "./contact/dffdf",
+    path: "./derectoris/contact/dffdf",
     data: null,
   },
   Received10: {
-    path: "./contact/d.txt",
+    path: "./derectoris/contact/d.txt",
     data: null,
   },
 }

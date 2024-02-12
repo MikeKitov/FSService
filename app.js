@@ -1,4 +1,6 @@
 const express = require("express");
+
+const getJsonResponse = require("./models/fs");
  
 const app = express();
 app.get("/", function(request, response){
@@ -13,10 +15,16 @@ app.get("/contact", function(request, response){
      
     response.send("<h1>Контакты</h1>");
 });
-app.get("/api/getPathInfo", function(request, response){
-     
-    request
-    response.json("");
+
+app.get("/api/getPathInfo", async function(request, response){
+    const path = request.query.path;
+
+    try {
+        response.json(await getJsonResponse(path));
+    } catch (error) {
+        console.error(error);
+        response.status(500).json({ error: "Internal Server Error" });
+    }
 });
 app.listen(3000);
 //curl
