@@ -8,7 +8,13 @@ const settingsData = fs.readFileSync(findSetting());
 const settings = JSON.parse(settingsData);
 
 const defaultPath = settings.defaultPath;
-
+/**
+ * 
+ * @param {*} filepath 
+ * @param {*} onlyFolders 
+ * @param {*} onlyFiles 
+ * @returns 
+ */
 async function getPathInfo(filepath, onlyFolders = false, onlyFiles = false) {
   try {
     const stats = await fs.promises.stat(filepath);
@@ -40,7 +46,7 @@ async function getPathInfo(filepath, onlyFolders = false, onlyFiles = false) {
 
       info.data.children = files.reduce((children, file) => {
         const absolutePath = path.join(filepath, file);
-        if (checkPath(absolutePath) === "Путь разрешен") {
+        if (checkPath(absolutePath.replace(/\\/g, '/')) === "Путь разрешен") {
           children.push(path.basename(file));
         }
         return children;
@@ -69,18 +75,27 @@ async function getJsonResponse(directoryPath, onlyFolders = false, onlyFiles = f
     }
   } catch (err) {
     let pathInfo;
-    if (err === null) {
+    if (err != null) {
+      pathInfo = {
+        data: "{" + err.toString() + "}",
+      };
+    } else {
       pathInfo = {
         data: err,
-      };
-    }
-    if (err === "Путь запрешен") {
-      pathInfo = {
-        data: "{error: " + err.toString() + "}",
       };
     }
     return pathInfo;
   }
 }
+
+async function main() {
+  try {
+    const c = await getJsonResponse("")
+    console.log(c);
+    return c;
+  } catch (err) {}
+}
+
+console.log(main())
 
 module.exports = getJsonResponse;
