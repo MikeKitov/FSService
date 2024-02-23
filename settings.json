@@ -1,17 +1,17 @@
 {
-    "defaultPath": "C:/Users/Кирилл//Desktop/Стажировка/FSService/derectoris/home",
+    "defaultPath": "E:/Work/000_Текучка/2024-01-26-Задание стажера/FSService/derectoris",
     "goodPaths": [
-        "C:/Users/Кирилл/Desktop/Стажировка/FSService/derectoris/home",
-        "C:/Users/Кирилл/Desktop/Стажировка/FSService/derectoris/123.txt",
-        "C:/Users/Кирилл/Desktop/Стажировка/FSService/derectoris/products",
-        "C:/Users/Кирилл/Desktop/Стажировка/FSService/derectoris/about",
-        "C:/Users/Кирилл/Desktop/Стажировка/FSService/derectoris/contact"
+        "E:/Work/000_Текучка/2024-01-26-Задание стажера/FSService/derectoris",
+        "E:/Work/000_Текучка/2024-01-26-Задание стажера/FSService/derectoris/123.txt",
+        "E:/Work/000_Текучка/2024-01-26-Задание стажера/FSService/derectoris/products",
+        "E:/Work/000_Текучка/2024-01-26-Задание стажера/FSService/derectoris/about",
+        "E:/Work/000_Текучка/2024-01-26-Задание стажера/FSService/derectoris/contact"
     ],
     "badPaths": [
-        "C:/Users/Кирилл/Desktop/Стажировка/FSService/derectoris/products/category/category1"
+        "E:/Work/000_Текучка/2024-01-26-Задание стажера/FSService/derectoris/products/category/category1"
     ],
     "invisiblePaths": [
-        "C:/Users/Кирилл/Desktop/Стажировка/FSService/derectoris/products/category/category2"
+        "E:/Work/000_Текучка/2024-01-26-Задание стажера/FSService/derectoris/products/category/category2"
     ],
     "goodPathsRegex": "^C:\/Users\/Кирилл\/Desktop\/Стажировка\/FSService\/derectoris\/(home|products|about|contact).*$",
     "badPathsRegex": "^C:\/Users\/Кирилл\/Desktop\/Стажировка\/FSService\/derectoris\/products\/category\/category1$",

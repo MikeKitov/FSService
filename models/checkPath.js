@@ -1,8 +1,8 @@
 const findSetting = require("./findSettings");
+const fs = require("fs");
 
 // Функция для проверки пути
 function checkPath(path) {
-    const fs = require("fs");
 
     const settingsData = fs.readFileSync(findSetting());
     const settings = JSON.parse(settingsData);

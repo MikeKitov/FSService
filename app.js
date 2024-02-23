@@ -20,7 +20,8 @@ app.get("/api/getPathInfo", async function(request, response){
     const path = request.query.path;
 
     try {
-        response.json(await getJsonResponse(path));
+		let res = await getJsonResponse(path);
+        response.json(res);
     } catch (error) {
         console.error(error);
         response.status(500).json({ error: "Internal Server Error" });

@@ -65,11 +65,12 @@ async function getJsonResponse(directoryPath, onlyFolders = false, onlyFiles = f
   }
   directoryPath = path.resolve(directoryPath).replace(/\\/g, '/').replace(/\/\//g, '/');
   try {
-    switch (checkPath(directoryPath)) {
+    let res = checkPath(directoryPath)
+    switch (res) {
       case "Путь не найден":
-        throw new Error(null);
+        throw new Error(res);
       case "Путь запрешен":
-        throw new Error("Путь запрешен");
+        throw new Error(res);
       case "Путь разрешен":
         return await getPathInfo(directoryPath, onlyFolders, onlyFiles);
     }
@@ -77,7 +78,8 @@ async function getJsonResponse(directoryPath, onlyFolders = false, onlyFiles = f
     let pathInfo;
     if (err != null) {
       pathInfo = {
-        data: "{" + err.toString() + "}",
+        error: err.message ? err.message : err.toString(),
+	status: 400
       };
     } else {
       pathInfo = {
@@ -96,6 +98,6 @@ async function main() {
   } catch (err) {}
 }
 
-console.log(main())
+//console.log(main())
 
 module.exports = getJsonResponse;
